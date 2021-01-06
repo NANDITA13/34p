@@ -8,14 +8,14 @@ class Sling {
                  pointB: pointB,
                  stiffness: 1,
                  angularStiffness: 1,
-                 lenght: 220
+                 length: 220
 
               }
 
               this.pointB = pointB;
               this.pointX = bodyA.x;
               this.pointY = bodyA.y - 250;
-              this.sling = constraint.create(opctions);
+              this.sling = constraint.create(options);
               World.add(world, this.sling);
           }
 
